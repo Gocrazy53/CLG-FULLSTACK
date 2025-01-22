@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: helvetica;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+
+        #Form {
+            height: 100vh;
+            width: 100vw;
+            /* padding:0 20px; */
+
+
+        }
+
+        #MedicalForm {
+            height: 100vh;
+            width: 100vw;
+            /* margin: 7px; */
+            background-color: rgb(250, 232, 181);
+            padding: 0 10px;
+            /* padding-left:20px; */
+            /* overflow-x: hidden; */
+
+        }
+
+        #MedicalForm h2 {
+            font-size: 20px;
+        }
+
+      
+
+        h2 {
+            background-color: orange;
+            padding: 7px;
+        }
+
+        .header {
+            color: #fff;
+            height: 70px;
+
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(29, 61, 124);
+
+
+            /* align-items: space-between; */
+        }
+
+        .header h1 {
+            font-size: 60px;
+            font-family: ubuntu;
+           
+        }
+
+        .header span{
+            color: orange;
+        }
+
+      
+
+        #MedicalForm input {
+            padding: 8px;
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 9px;
+            border: 2px solid orange;
+
+        }
+
+        #MedicalForm label {
+            margin: 7px;
+        }
+
+        .medicalhistory {
+            margin-top: 5px;
+            display: flex;
+            gap: 50px;
+        }
+
+        #purposeinput {
+            width: 700px;
+            height: 50px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Form">
+        <div id="MedicalForm">
+
+            <div class="header">
+                <h1>Medical Form</h1>
+                <h6><span>ST.JAMES</span> <br>HOSPITAL</h6>
+
+
+            </div>
+
+            <form action="" id="Form-1">
+                <h2>PATIENT INFORMATION</h2>
+                <div class="patientinfo">
+                    <div class="input">
+                        <label for="Name">Patient's Full Name</label><input type="text">
+                        <label for="Name">Date of Birth</label><input type="date">
+                    </div>
+
+                    <div class="input">
+                        <label for="Name"></label>Email Address<input type="email">
+                        <label for="Name">Phone Number</label><input type="text">
+                    </div>
+
+                </div>
+
+                <div class="contactinfo">
+
+                    <h2>EMERGENCY CONTACT INFORMATION</h2>
+                    <label for="Name">Name</label><input type="text">
+                    <label for="">Relationship</label><input type="text">
+                    <label for="">Phone Number</label><input type="text">
+
+                </div>
+
+                <div class="insuranceinfo">
+                    <h2>INSURANCE INFORMATION</h2>
+                    <label for="">Insurance Provider</label><input type="text">
+                    <label for="PolicyNumber">policy Number</label><input type="text">
+
+                </div>
+
+                <h2>MEDICAL HISTORY</h2>
+                <div class="medicalhistory">
+                    <div class="1stpart">
+                        <h4>
+                            Have you ever had any of the following <br>
+                            conditions?(check all that apply)
+                        </h4>
+                        <input type="checkbox"><label for="">Diabetes</label><br>
+                        <input type="checkbox"><label for="">Hypertension</label><br>
+                        <input type="checkbox"><label for="">Asthma</label><br>
+                        <input type="checkbox"><label for="">Cancer</label><br>
+                        <input type="checkbox"><label for="">Other</label><input type="text">
+
+                    </div>
+
+                    <div class="2ndpart">
+                        <p>Do you have any known allergies?</p>
+                        <input type="text">
+
+                        <p>Are you taking any medications?if yes then please list:</p>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="purpose">
+                    <h2>PURPOSE OF VISIT</h2>
+                    <p>write the purpose of your visit</p> 
+                    <input type="text" id="purposeinput">
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+#main {
+  padding: 40px;
+}
+
+.header {
+  text-align: center;
+  padding: 10px 0;
+  height: 150px;
+  width: 100%;
+  background-color: rgb(218, 229, 225);
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  color: #624545;
+  font-size: 80px;
+  font-family: ubuntu;
+  font-weight: bold;
+}
+
+.toppart input {
+  width: 50%;
+  /* padding:10px; */
+}
+
+.input {
+  padding: 20px;
+  margin-bottom: 60px;
+  border: 2px solid #042973;
+  border-radius: 10px;
+}
+
+.midpart {
+  display: flex;
+  gap: 100px;
+  /* justify-content:space-around ; */
+}
+
+.endpart {
+  display: flex;
+  gap: 40px;
+}
+
+.submit {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit .btn {
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 10px;
+}
+label {
+  font-size: 35px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.gender label {
+  margin-left: 10px;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    /* text-align: center; */
+    /* padding:10px 0; */
+    /* height:150px; */
+    width: 100%;
+    background-color: rgb(218, 229, 225);
+    margin-bottom: 15px;
+  }
+
+  .header h1 {
+    color: #624545;
+    font-size: 40px;
+    font-family: ubuntu;
+    font-weight: bold;
+  }
+}

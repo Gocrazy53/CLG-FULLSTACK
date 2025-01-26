@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+            padding:10px;
+
+
+        }
+
+        .item {
+            border: 5px solid #000;
+            height: 100%;
+            width: 100%;
+            background-color: aqua;
+
+
+        }
+
+
+        .item1{
+            display:grid;
+            /* grid-template-rows: 100px,100px; */
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+
+        .item2{
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        
+
+
+        .f1, .f2,.f3,.f4,.f5,.f6,.f7,.f8,.f9{
+            border: 5px solid #000;
+        }
+
+        
+
+       .f2-1st{
+        grid-column: 1/3;
+        /* grid-row:1/3; */
+       }
+
+       .f2-2nd{
+        grid-column:3;
+        grid-row: 1/3;
+       }
+
+
+       
+
+       .item3{
+        display: grid;
+        grid-template-rows:1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr;
+       }
+
+       
+       .f3-1st{
+        grid-row: 1;
+        grid-column: 1/3;
+       }
+    
+       .f3-4th{
+        grid-row:3;
+        grid-column: 1/3;
+       }
+
+
+       .item4{
+        display: grid;
+        grid-template-columns:1fr 1fr 2fr;
+        grid-template-rows:2fr 3fr 1fr;
+       }
+       
+
+       .f4-1st{
+        grid-row:1;
+        grid-column:1/3;
+       }
+       .f4-2nd{
+        grid-row: 1;
+        grid-column:3;
+       }
+       .f4-3rd{
+        grid-row:2;
+        grid-column:1;
+       }
+       .f4-4th{
+        grid-row: 2;
+        grid-column: 2/4;
+       }
+
+       .f4-5th{
+        grid-column: 1/4;
+       }
+
+       .item5{
+        display: grid;
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows: repeat(3,1fr);
+       }
+       
+
+       .item6{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+       }
+       .f6-1st{
+        grid-column: 1/3;
+       }
+       .f6-8th{
+
+        grid-row:3/5;
+        grid-column: 1/3;
+       }
+       .f6-9th{
+        grid-column: 3;
+        grid-row: 3;
+       }
+       .f6-13th{
+        grid-column: 1/4;
+       }
+      
+
+       .item7{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+       }
+       
+       .f7-2nd{
+        grid-column:2/4;
+
+       }
+       .f7-3rd{
+        grid-row: 2/4;
+       }
+       .f7-4th{
+        grid-column:2/4;
+       }
+
+       .item8{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(5,1fr);
+       }
+       
+
+       .f8-8th{
+        grid-column:3/6;
+       }
+
+       .f8-9th{
+        grid-column: 1/6;
+       }
+
+       .item9{
+        display: grid;
+        grid-template-rows:1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr 1fr;
+       }
+       
+
+       .f9-1st{
+        grid-column: 1/4;
+
+       }
+       .f9-2nd{
+        grid-row: 2/4;
+       }
+       .f9-3rd{
+        grid-column:2/4;
+       }
+
+       .black{
+        background-color: #000;
+       }
+       .orange{
+        background-color: rgb(255, 48, 48);
+       }
+       .orangered{
+        background-color: rgb(234, 69, 8);
+       }
+       .aquamarime{
+        background-color: rgb(40, 128, 99);
+       }
+       .aqua2{
+        background-color: rgb(25, 148, 148);
+       }
+       .aqua3{
+        background-color: rgb(20, 197, 197);
+       }
+       .green{
+        background-color: green;
+       }
+
+
+       
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">
+            <div class="f1 orange"></div>
+            <div class="f1 orangered"></div>
+            <div class="f1 orangered"></div>
+            <div class="f1 aquamarime"></div>
+            <div class="f1 aqua2"></div>
+            <div class="f1 aqua3"></div>
+            
+            
+            
+        </div>
+        <div class="item item2">
+            <div class="f2 f2-1st orange"></div>
+            <div class="f2 f2-2nd orangered"></div>
+            <div class="f2 aqua3"></div>
+            <div class="f2 aqua2"></div>
+            <!-- <div class="f2">5</div> -->
+            <!-- <div class="f2">6</div> -->
+
+
+
+        </div>
+        <div class="item item3">
+            <div class="f3 f3-1st orangered "></div>
+            <div class="f3 aqua3"></div>
+            <div class="f3 orange"></div>
+            <div class="f3 f3-4th aqua2 "></div>
+            <!-- <div class="f3 "></div>
+            <div class="f3 "></div> -->
+        </div>
+        <div class="item item4">
+            <div class="f4 f4-1st orangered"></div>
+            <div class="f4 f4-2nd orange"></div>
+            <div class="f4 f4-3rd aqua2"></div>
+            <div class="f4 f4-4th aqua3"></div>
+            <div class="f4 f4-5th orangered"></div>
+
+        </div>
+        <div class="item item5">
+            <div class="f5 aqua2"></div>
+            <div class="f5 orangered"></div>
+            <div class="f5 aqua2"></div>
+            <div class="f5 orange"></div>
+            <div class="f5 aqua3"></div>
+            <div class="f5 orangered"></div>
+            <div class="f5 orangered"></div>
+            <div class="f5 aqua3"></div>
+            <div class="f5 orangered"></div>
+            <div class="f5 aqua2"></div>
+            <div class="f5 orange"></div>
+            <div class="f5 aqua3"></div>
+            <div class="f5 aqua2"></div>
+            <div class="f5 orangered "></div>
+            <div class="f5 aqua2 "></div>
+            <div class="f5 orange"></div>
+            <div class="f5 aqua3"></div>
+            <div class="f5 orangered"></div>
+        </div>
+        <div class="item item6">
+            <div class="f6 f6-1st orange"></div>
+            <div class="f6 f6-2nd aqua2"></div>
+            <div class="f6 f6-3rd orangered"></div>
+            <div class="f6 f6-4th orange"></div>
+            <div class="f6 f6-5th aqua2"></div>
+            <div class="f6 f6-6th aqua3"></div>
+            <div class="f6 f6-7th black"></div>
+            <div class="f6 f6-8th orangered"></div>
+            <div class="f6 f6-9th aqua2"></div>
+            <div class="f6 f6-10th orange"></div>
+            <div class="f6 f6-11th aqua3"></div>
+            <div class="f6 f6-12th black"></div>
+            <div class="f6 f6-13th aqua2"></div>
+            <div class="f6 f6-14th orangered"></div>
+
+        </div>
+        <div class="item item7">
+            <div class="f7 f7-1st orangered"></div>
+            <div class="f7 f7-2nd aqua2"></div>
+            <div class="f7 f7-3rd orange"></div>
+            <div class="f7 f7-4th aqua3"></div>
+            <div class="f7 f7-5th aqua2"></div>
+            <div class="f7 f7-6th orangered"></div>
+            
+
+        </div>
+        <div class="item item8">
+            <div class="f8 orange"></div>
+            <div class="f8 orangered"></div>
+            <div class="f8 aqua2 "></div>
+            <div class="f8 aqua3"></div>
+            <div class="f8 aqua"></div>
+            <div class="f8 orangered"></div>
+            <div class="f8 orange"></div>
+            <div class="f8 f8-8th orangered"></div>
+            <div class="f8 f8-9th aqua3"></div>
+        </div>
+        <div class="item item9">
+            <div class="f9 f9-1st orangered"></div>
+            <div class="f9 f9-2nd aqua3"></div>
+            <div class="f9 f9-3rd aqua2"></div>
+            <div class="f9 orange"></div>
+            <div class="f9 orangered"></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

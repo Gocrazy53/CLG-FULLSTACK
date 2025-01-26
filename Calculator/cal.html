@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .main-box{
+        border: 5px solid black;
+        height: 600px;
+        width: 400px;
+        background-color: bisque;
+        border-radius: 50px;
+        margin-top: 50px;
+        margin-left: 300px;
+
+    }
+    .display{
+        height: 75px;
+        width:300px;
+        border: 5px solid black;
+        border-radius: 25px;
+        background-color: azure;
+        margin-left: 45px;
+        margin-top: 25px;
+    }
+    .b{
+        height: 5vh;
+        width:10vh ;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: aqua;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+</style>
+<body>
+    <div class="main-box">
+     <input type="text" class="display" id="display">
+     <div class="flex">
+        <button class="b" onclick="append(1)">1</button>
+        <button class="b" onclick="append(2)">2</button>
+        <button class="b" onclick="append(3)">3</button>
+
+     </div>
+     <div class="flex">
+        <button class="b" onclick="append(4)">4</button>
+        <button class="b" onclick="append(5)">5</button>
+        <button class="b" onclick="append(6)">6</button>
+
+     </div>
+     <div class="flex">
+        <button class="b" onclick="append(7)">7</button>
+        <button class="b" onclick="append(8)">8</button>
+        <button class="b" onclick="append(9)">9</button>
+
+     </div>
+     <div class="flex">
+        <button class="b" onclick="clearDisplay()">Clear</button>
+        <button class="b" onclick="append(0)">0</button>
+        <button class="b" onclick="result()">=</button>
+
+     </div>
+     <div class="flex">
+        <button class="b" onclick="append('+')">+</button>
+        <button class="b" onclick="append('-')">-</button>
+        <button class="b" onclick="append('*')">*</button>
+
+     </div>
+    </div>
+    <script>
+      function append(val){
+    document.getElementById("display").value+=val;
+      }
+      function clearDisplay(){
+       document.getElementById("display").value='';
+      }
+      function result(){
+       let res=document.getElementById("display").value
+        let rese=eval(res)
+        document.getElementById("display").value=rese
+      }
+    </script>
+</body>
+</html>
+

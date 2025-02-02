@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="in">
+    <h2 class="result"></h2>
+    <button onclick="mul()" style="padding: 20px;" class="click">click</button>
+    <script>
+       
+
+        function mul(){
+            let ele = document.querySelector(".in").value;
+            console.log(ele)
+            let result = document.querySelector(".result");
+            ele = ele * 2;
+            result.innerHTML = ele;
+        }
+
+    </script>
+
+    <!-- <input class="ele" type="number"> -->
+
+    <!-- <script>
+        let ele = document.querySelector(".ele");
+        console.log(ele);
+        if(ele === ""){
+            console.log("t");
+
+            
+        }else{
+            console.log("f");
+            
+
+        }
+
+    </script> -->
+
+
+    
+</body>
+</html>

@@ -38,6 +38,7 @@
             width:100%;
             font-size:30px;
             border:2px solid #000;
+            border-radius: 5px;
 
             padding:20px;
 
@@ -68,38 +69,52 @@
 </head>
 <body>
     <div class="container">
-        <div class="item item1"><input id="input" type="text" placeholder="Enter to perform operations" value=""></div>
-        <div class="item"><button onclick="" id="one" class = "btn">1</button></div>
-        <div class="item"><button id="two" class = "btn">2</button></div>
-        <div class="item"><button id="three" class = "btn">3</button></div>
-        <div class="item"><button id="four" class = "btn">4</button></div>
-        <div class="item"><button id="five" class = "btn">5</button></div>
-        <div class="item"><button id="six" class = "btn">6</button></div>
-        <div class="item"><button id="seven" class = "btn">7</button></div>
-        <div class="item"><button id="eight" class = "btn">8</button></div>
-        <div class="item"><button id="nine" class = "btn">9</button></div>
-        <div class="item"><button id="0" class = "btn">0</button></div>
-        <div class="item"><button id="plus" class = "btn">+</button></div>
-        <div class="item"><button id="minus" class = "btn">-</button></div>
-        <div class="item"><button id="multiply" class = "btn">*</button></div>
-        <div class="item"><button id="divison" class = "btn">/</button></div>
-        <div class="item"><button id="delete" class = "btn">del</button></div>
-        <div class="item"><button id="equalto" class = "btn">=</button></div>
-        <div class="item"><button id="reset" class = "btn">Reset</button></div>
-        <div class="item"><button id="clear" class = "btn">Clear</button></div>
+        <div class="item item1"><input id="display" type="text" placeholder="Enter to perform operations" value=""></div>
+        <div class="item"><button onclick="append(1)" id="one" class = "btn">1</button></div>
+        <div class="item"><button onclick="append(2)" id="two" class = "btn">2</button></div>
+        <div class="item"><button onclick="append(3)" id="three" class = "btn">3</button></div>
+        <div class="item"><button onclick="append(4)" id="four" class = "btn">4</button></div>
+        <div class="item"><button onclick="append(5)" id="five" class = "btn">5</button></div>
+        <div class="item"><button onclick="append(6)" id="six" class = "btn">6</button></div>
+        <div class="item"><button onclick="append(7)" id="seven" class = "btn">7</button></div>
+        <div class="item"><button onclick="append(8)" id="eight" class = "btn">8</button></div>
+        <div class="item"><button onclick="append(9)" id="nine" class = "btn">9</button></div>
+        <div class="item"><button onclick="append(0)" id="0" class = "btn">0</button></div>
+        <div class="item"><button onclick="append('+')" id="plus" class = "btn">+</button></div>
+        <div class="item"><button onclick="append('-')" id="minus" class = "btn">-</button></div>
+        <div class="item"><button onclick="append('*')" id="multiply" class = "btn">*</button></div>
+        <div class="item"><button onclick="append('/')" id="divison" class = "btn">/</button></div>
+        <div class="item"><button onclick="" id="delete" class = "btn">del</button></div>
+        <div class="item"><button onclick="result()" id="equalto" class = "btn">=</button></div>
+        <div class="item"><button onclick="append('')" id="reset" class = "btn">Reset</button></div>
+        <div class="item"><button onclick="clearDisplay()" id="clear" class = "btn">Clear</button></div>
 
     </div>
 
     <script>
-        let one = document.getElementById("one");
-        let input = document.getElementById("input")
+        // let one = document.getElementById("one");
+        // let input = document.getElementById("input")
 
-        function displayOne(){
-            let val = one.value;
-            return input.innerHTML = val;
+        // function displayOne(){
+        //     let val = one.value;
+        //     return input.innerHTML = val;
         
             
-        }
+        // }
+
+    
+      function append(val){
+    document.getElementById("display").value+=val;
+      }
+      function clearDisplay(){
+       document.getElementById("display").value='';
+      }
+      function result(){
+       let res=document.getElementById("display").value
+        let rese=eval(res)
+        document.getElementById("display").value=rese
+      }
+    
     </script>
     
 </body>

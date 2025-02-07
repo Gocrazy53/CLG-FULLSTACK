@@ -1,0 +1,14 @@
+
+p{
+    color:#fff;
+}
+
+.sec-component{
+    height:200px;
+    width:100vw;
+    padding:20px;
+    border:1px solid #fff;
+    margin-top:20px;
+    /* margin: 0  auto; */
+    text-align: center;
+}

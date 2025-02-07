@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width:100%;
+}
+
+.main-div{
+  height:100%;
+  width:100%;
+}
+
+.d-flex{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #dadada;
+  padding: 15px;
+}
+
+.nav-con{
+  font-size: 30px;
+  text-decoration:none;
+  
+
+}

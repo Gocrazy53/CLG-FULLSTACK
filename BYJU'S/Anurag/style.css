@@ -1,0 +1,177 @@
+.sec4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sec4 h1{
+    font-size: 2.2rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.sec4 .rating, .parents-review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.sec4 .rating .download, .star-rating, .cities, .minutes{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+}
+
+.sec4 .rating .download img, .star-rating img, .cities img, .minutes img{
+    width: 2.8rem;
+}
+
+.sec4 .rating .download h2, .star-rating h2, .cities h2, .minutes h2{
+    color: purple;
+}
+
+.sec4 .rating .download p, .star-rating p, .cities p, .minutes p{
+    color: #333333;
+}
+
+.sec4 .parents-review .parent-1, .parent-2, .parent-3{
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 5rem;
+}
+
+.sec4 .parents-review .parent-1 img, .parent-2 img, .parent-3 img{
+    width: 9rem;
+    cursor: pointer;
+}
+
+.sec4 .parents-review .parent-1 p, .parent-2 p, .parent-3 p{
+    font-size: 15px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+.sec4 .parents-review .parent-1 h4, .parent-2 h4, .parent-3 h4{
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sec4 .parents-review .parent-2{
+    margin-bottom: 18px;
+}
+
+.sec4 .parents-review .parent-1 .trianlge, .parent-2 .trianlge, .parent-3 .trianlge{
+    width: 3rem;
+    margin-left: -3.5rem;
+}
+
+.sec4 .parents-review .parent-1 .class-location, .parent-2 .class-location, .parent-3 .class-location{
+    font-size: 13.5px;
+}
+
+.sec4 .parents-review .arrow{
+    transform: rotate(180deg);
+}
+
+.sec4 button{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(135deg, #5e70ff, #8b40ff);
+    color: white;
+    cursor: pointer;
+}
+
+.sec4 button ion-icon{
+    font-size: 20px;
+    font-weight: 1000;
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+footer img{
+    z-index: 1008;
+    width: 100%;
+}
+
+footer .india-course{
+    background: #813588;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    padding-bottom: 20px;
+}
+
+footer .india-course .course, .exams-classes, .exam-resources, .company-follow, .free-textbook-solution, .state-boards{
+    display: inline-grid;
+    width: 17%;
+    min-height: 1px;
+}
+
+footer .india-course .course p, .exams-classes p, .exam-resources p, .company-follow p, .free-textbook-solution p, .state-boards p{
+    color: #ffc846;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer .india-course .course a, .exams-classes a, .exam-resources a, .company-follow a, .free-textbook-solution a, .state-boards a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+footer .india-course .course a:hover, .exams-classes a:hover, .exam-resources a:hover, .company-follow a:hover, .free-textbook-solution a:hover, .state-boards a:hover{
+    font-weight: 500;
+}
+
+footer .india-course .company-follow .follow{
+    display: flex;
+}
+
+footer .india-course .company-follow .follow img{
+    width: 30px;
+}
+footer hr{
+    height: 1px;
+    background: rgba(179, 179, 179, 0.582);
+    border: none;
+    width: 93%;
+    margin-left: 45px;
+}
+
+footer .bottom{
+    background: #813588;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 3rem;
+    font-size: 13px;
+}
+
+footer .bottom .pages a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .bottom .pages ion-icon{
+    transform: rotate(90deg);
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+footer .bottom .copyright{
+    margin-top: 10px;
+}

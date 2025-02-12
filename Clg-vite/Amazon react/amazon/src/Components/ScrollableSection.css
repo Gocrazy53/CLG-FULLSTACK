@@ -1,0 +1,16 @@
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid black;
+    background: white;
+    scrollbar-width: thin;
+    scrollbar-color: gray transparent;
+  }
+  
+
+.card {
+    min-width: 200px;
+    border: 1px solid black;
+  }

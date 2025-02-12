@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+.login-section{
+    /* height:; */
+    width:100vw;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: #afa6a6;
+}
+
+.login{
+    /* height:400px; */
+    width: 100%;
+    /* background-color: #000; */
+    background-color: #afa6a6;
+
+}
+
+
+/* Centering the Login Card */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh; /* Full screen height */
+    background-color: #f2f2f2; /* Light Gray Background */
+  }
+  
+  .login-card {
+    background:#dadada;
+    padding: 20px;
+    height:360px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* height:30vh; */
+  }
+  
+  /* Heading Styling */
+  .login-card h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Input Fields */
+  .login-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 13px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Login Button */
+  .login-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00ff08;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  
+  .login-card button:hover {
+    background-color: #e68a00;
+  }
+  
